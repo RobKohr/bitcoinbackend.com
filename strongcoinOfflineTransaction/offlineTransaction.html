@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Untitled</title>
+<script type="text/javascript" src="lib/events/eventemitter.js"></script>
+<script type="text/javascript" src="lib/jsbn/ec.js"></script>
+<script type="text/javascript" src="lib/jsbn/prng4.js"></script>
+<script type="text/javascript" src="lib/jsbn/rng.js"></script>
+<script type="text/javascript" src="lib/jsbn/sec.js"></script>
+<script type="text/javascript" src="lib/jsbn/jsbn.js"></script>
+<script type="text/javascript" src="lib/jsbn/jsbn2.js"></script>
+<!--<script type="text/javascript" src="lib/crypto-js/crypto-min.js"></script>-->
+<script type="text/javascript" src="lib/crypto-js/crypto.js"></script>
+<script type="text/javascript" src="lib/crypto-js/ripemd160.js"></script>
+<!--<script type="text/javascript" src="lib/crypto-js/sha256-min.js"></script>-->
+<script type="text/javascript" src="lib/crypto-js/sha256.js"></script>
+<script type="text/javascript" src="lib/bitcoin.js"></script>
+<script type="text/javascript" src="lib/ecdsa.js"></script>
+<script type="text/javascript" src="lib/eckey.js"></script>
+<script type="text/javascript" src="lib/opcode.js"></script>
+<script type="text/javascript" src="lib/paillier.js"></script>
+<script type="text/javascript" src="lib/script.js"></script>
+<script type="text/javascript" src="lib/transaction.js"></script>
+<script type="text/javascript" src="lib/txdb.js"></script>
+<script type="text/javascript" src="lib/util.js"></script>
+<script type="text/javascript" src="lib/wallet.js"></script>
+<script type="text/javascript" src="lib/address.js"></script>
+<script type="text/javascript" src="lib/base58.js"></script>
+<!--<script type="text/javascript" src="lib/exit/client.js"></script>-->
+
+<script type="text/javascript" src="offlineTransaction.js"></script>
+</head>
+
+<body>
+
+<form name="inputForm" method="get">
+<strong>Transaction history:</strong><br>
+<textarea name="transactions" cols="80" rows="20">
+</textarea><br>
+<strong>Private key in base 58:</strong><br>
+<input name="privkey" type="text" size="80" Value=""><br>
+<input type="button" name="button" Value="Parse" onClick="parseFormData(this.form)">
+</form>
+<strong>Address:</strong>
+<div id="Address">(unknown)</div>
+<strong>Balance:</strong>
+<div id="Balance">(unknown)</div>
+<br>
+<form name="transactionForm" method="get">
+<strong>Target address:</strong><br>
+<input name="target" type="text" size="80" Value=""><br>
+<strong>Amount:</strong><br>
+<input name="amount" type="text" size="80" Value=""><br>
+<strong>Fee:</strong><br>
+<input name="fee" type="text" size="80" Value="0"><br>
+<input type="button" name="button" Value="Generate" onClick="createTransaction(this.form)">
+</form>
+<strong>Transaction:</strong>
+<form name="resultForm"><input name="Transaction" type="text" size="240" Value=""><br></form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+26 Mar 17:04:32 - [nodemon] v0.7.4
+26 Mar 17:04:32 - [32m[nodemon] watching: /root/www/bitcoinbackend.com[0m
+26 Mar 17:04:32 - [32m[nodemon] starting `node bitcoinbackend.js`[0m
+26 Mar 17:04:32 - [nodemon] exception in nodemon killing node
+Error: EBADF, read
+26 Mar 17:04:32 - [1;31m[nodemon] app crashed - waiting for file changes before starting...[0m
+26 Mar 17:05:27 - [nodemon] restarting due to changes...
+26 Mar 17:05:27 - [nodemon] /root/www/bitcoinbackend.com/.#bitcoinbackend.js
+
+
+26 Mar 17:05:27 - [32m[nodemon] starting `node bitcoinbackend.js`[0m
+26 Mar 20:02:02 - [nodemon] v0.7.4
+26 Mar 20:02:02 - [32m[nodemon] watching: /root/www/bitcoinbackend.com[0m
+26 Mar 20:02:02 - [32m[nodemon] starting `node bitcoinbackend.js`[0m
+26 Mar 20:02:02 - [nodemon] exception in nodemon killing node
+Error: EBADF, read
+26 Mar 20:02:02 - [1;31m[nodemon] app crashed - waiting for file changes before starting...[0m
+26 Mar 20:02:28 - [nodemon] restarting due to changes...
+26 Mar 20:02:28 - [nodemon] /root/www/bitcoinbackend.com/bitcoinbackend.js
+
+
+26 Mar 20:02:28 - [32m[nodemon] starting `node bitcoinbackend.js`[0m
